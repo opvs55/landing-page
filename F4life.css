@@ -1,0 +1,164 @@
+:root{
+    --cor1: #142434;
+    --cor2: rgb(105, 211, 204);
+    --textopri: #cdd0d4;
+    --textosecun: #568b94;
+    --textoter: #67737e;
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-height: 100rem;
+    max-width: 100rem;
+    min-height: 250px;
+    min-width: 250px;
+}
+header{
+    height:100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#top{
+    background-color: var(--cor1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 5px solid black;
+}
+#mensagem1{
+    color: var(--textopri);
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+h2{
+    width: 100%;
+}
+#meio{
+    background: linear-gradient(rgb(0,0,0,0.2), rgb(0,0,0,0.6)), url("./img/pexels-domenico-bandiera-5098531_Easy-Resize.com.jpg");
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    
+}
+#lado1{
+    flex-grow: 1;
+    background-color: yellow;
+}
+#lado2{
+    flex-grow: 1;
+    background-color: brown;
+}
+main{
+    min-height: 120vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+#corpo1{
+    background-color: var(--cor1);
+    flex-grow: 1;
+    border-top: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+#corpo2{
+    background-color: chartreuse;
+    flex-grow: 2;
+}
+#corpo3{
+    background-color: crimson;
+    flex-grow: 1;
+}
+#foto1{
+    width: 20rem;
+    height: 100%;
+
+}
+#foto2{
+    border: 3px solid black;
+    width: 100%;
+}
+#sub1{
+    flex-grow: 0.1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    flex-direction: column;
+    font-size: 2em;
+    color: var(--textopri);
+    color: var(--cor2);
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+#textoh1{
+    margin-top: 2em;
+}
+#sub2{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#questionario{
+    font-size: 1em;
+    color: var(--textopri);
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#introduçao{
+    font-size: 2em;
+    text-align: center;
+    color: var(--textosecun);
+}
+#chamado{
+    font-style: italic;
+}
+form{
+    background-color: var(--textoter);
+    width: 190px;
+    border-radius: 3%;
+    border-top: 10px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    margin-bottom: 4em;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--cor1);
+}
+#footer{
+    font-size: 1.5em;
+    color: var(--cor2);
+    font-weight: 800;
+}
+#tchau{
+    display: flex;
+    align-items: flex-end;
+}
