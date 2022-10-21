@@ -12,12 +12,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*formatação e variáveis*/
+
+/*CORPO TOTAL*/
+
 .container{
-    max-height: 100rem;
-    max-width: 100rem;
-    min-height: 250px;
-    min-width: 250px;
+    max-width: 1280px;
+    min-width: 320px;
+    margin: auto;
 }
+
+/*HEADER*/
+
 header{
     height:100vh;
     width: 100vw;
@@ -27,6 +34,7 @@ header{
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 #top{
     background-color: var(--cor1);
     display: flex;
@@ -34,66 +42,57 @@ header{
     justify-content: space-evenly;
     border-bottom: 5px solid black;
 }
-#mensagem1{
-    color: var(--textopri);
-    width: 100%;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+#top > h2{
+    align-self: center;
+    color: var(--textopri)
+}
 
-}
-h2{
-    width: 100%;
-}
+/* header 2 */
+
 #meio{
     background: linear-gradient(rgb(0,0,0,0.2), rgb(0,0,0,0.6)), url("./img/pexels-domenico-bandiera-5098531_Easy-Resize.com.jpg");
     flex-grow: 1;
     display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
 }
-#lado1{
-    flex-grow: 1;
-    background-color: yellow;
+#busca{
+    border-radius: 10px;
+    height: 2rem;
+    width: 400px;
+    margin-bottom: 7px;
 }
-#lado2{
-    flex-grow: 1;
-    background-color: brown;
+#mensagem1>h2{
+    text-align: center;
 }
+
+/*corpo*/
+
 main{
-    min-height: 120vh;
-    min-width: 100vw;
+    max-width: 1280px;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
 }
-#corpo1{
+#barriga{
     background-color: var(--cor1);
-    flex-grow: 1;
     border-top: 5px solid black;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
 }
-#corpo2{
-    background-color: chartreuse;
-    flex-grow: 2;
-}
-#corpo3{
-    background-color: crimson;
-    flex-grow: 1;
-}
-#foto1{
-    width: 20rem;
-    height: 100%;
 
-}
-#foto2{
-    border: 3px solid black;
-    width: 100%;
+/* cartão*/
+
+#cartao{
+    width: 22rem;
+    height: 25rem;
+    background-color: white;
+    border-radius: 10%;
 }
 #sub1{
     flex-grow: 0.1;
@@ -101,28 +100,25 @@ main{
     align-items: center;
     justify-content: center;
     padding: 1em;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 2em;
     color: var(--textopri);
     color: var(--cor2);
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100%;
     width: 100%;
+    margin-top: 10%;
+    flex-wrap: wrap;
 }
-#textoh1{
-    margin-top: 2em;
-}
+
+/* cadastro */
+
 #sub2{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-form{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 10%;
 }
 #questionario{
     font-size: 1em;
@@ -140,25 +136,41 @@ form{
 }
 form{
     background-color: var(--textoter);
-    width: 190px;
-    border-radius: 3%;
-    border-top: 10px solid black;
-    border-right: 3px solid black;
-    border-left: 3px solid black;
+    width: 200px;
+    height: 210px;
     margin-bottom: 4em;
+    border-radius: 10px;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
+/*foote*/
+
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--cor1);
-}
-#footer{
-    font-size: 1.5em;
-    color: var(--cor2);
-    font-weight: 800;
 }
 #tchau{
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    font-size: 1.5em;
+    color: var(--cor2);
+    font-weight: 800;
+    font-size: x-large;
+}
+#sociais{
+    margin-top: 5%;
+}
+
+#tchau>p{
+    font-size: x-large;
+    margin-left: 40px;
 }
